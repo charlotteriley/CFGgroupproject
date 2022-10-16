@@ -1,0 +1,62 @@
+h1 {
+    padding: 25px 50px 75px 100px;
+    margin: 20 px;
+    color: rgb(16, 60, 16);
+}
+
+.adopt{
+    background-color: rgb(16, 60, 16); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.bg-cfg-green {
+    background-color: rgb(16, 60, 16) !important;
+}
+
+body{
+    padding-bottom: 25px;
+}
+
+input[type=text] { /* This is to format name input */
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=email] { /* This is to format email input */
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=number] { /* This is to format mobile number input */
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+select { /* This is to format the drop down box */
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: ;
+  }
+figcaption { /* This is set to the pixel width of fig (manually) */
+    max-width: 490px;
+}
+
+.navbar{
+  font-size: x-large;
+}
+
+.contact {text-align: end!important;}

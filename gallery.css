@@ -61,6 +61,7 @@ figcaption{
     font-size: 20px;
 }
 footer{
+    display: flex;
     background-color: #355135;
     position:relative;
     height: 100px;

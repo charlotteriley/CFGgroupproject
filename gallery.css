@@ -1,16 +1,15 @@
-
 nav{
     height: 80px;
     background-color: #355135;
     display: flex;
     align-items: center;
+    position: relative;
 }
 nav a{
-    display: flex;
+    display: block;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.5;
     padding: 40px;
 }
 .contact{
@@ -20,6 +19,75 @@ nav a:hover{
     transform:scale(1.1);
     text-decoration: underline;
 }
+.hamburger-menu {
+    margin-left: auto;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.ham-bar {
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top {
+    top: 25%;
+}
+.bar-bottom {
+    top: 75%;
+}
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(315deg);
+    top: 50%;
+}
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+}
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(225deg);
+    top: 50%;
+}
+@media (max-width: 900px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    nav a {
+        display: none;
+    }
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
 a{
     text-decoration: none;
 }
@@ -31,6 +99,8 @@ body{
     background-color: #EFFDF1;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2x;
+    margin: 0;
+    padding: 0;
 }
 h1 {
     color: #355135;

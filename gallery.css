@@ -1,21 +1,29 @@
-nav{
-    height: 80px;
+.nav{
     background-color: #355135;
     display: flex;
     align-items: center;
     position: relative;
 }
-nav a{
+.nav .logo {
+    width: 200px;
+}
+.nav ul{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    list-style: none;
+}
+.nav ul li:last-child {
+    margin-left: auto;
+}
+.nav a {
     display: block;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    padding: 40px;
+    margin-right: 40px;
 }
-.contact{
-    margin-left: auto;
-}
-nav a:hover{
+.nav a:hover{
     transform:scale(1.1);
     text-decoration: underline;
 }
@@ -48,52 +56,45 @@ nav a:hover{
 .bar-bottom {
     top: 75%;
 }
-.hamburger-menu.active .bar-top {
+.nav.active .hamburger-menu .bar-top {
     transform: translate(-50%, -50%) rotate(315deg);
     top: 50%;
 }
-.hamburger-menu.active .bar-mid {
+.nav.active .hamburger-menu .bar-mid {
     opacity: 0;
 }
-.hamburger-menu.active .bar-bottom {
+.nav.active .hamburger-menu .bar-bottom {
     transform: translate(-50%, -50%) rotate(225deg);
     top: 50%;
 }
+
 @media (max-width: 900px) {
     .hamburger-menu {
         display: flex;
     }
-    nav a {
+
+    .nav ul {
         display: none;
+        position: absolute;
+        top: 78.96px;
+        left: 0;
+        width: 100%;
+        background: #547c54;
+        margin: 0;
     }
-        .navbar-links {
-            display: none;
-            width: 100%;
-        }
-    
-        .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-    
-        .navbar-links ul li {
-            text-align: center;
-        }
-    
-        .navbar-links ul li a {
-            padding: .5rem 1rem;
-        }
-    
-        .navbar-links.active {
-            display: flex;
-        }
+
+    .nav.active ul {
+        display: block;
     }
+
+    .nav ul li {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
 a{
     text-decoration: none;
-}
-.logo{
-    height: 100%;
-    width: auto;
 }
 body{
     background-color: #EFFDF1;

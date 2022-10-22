@@ -92,16 +92,15 @@
         margin: 20px 0;
     }
 }
-
-a{
-    text-decoration: none;
-}
 body{
     background-color: #EFFDF1;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2x;
     margin: 0;
     padding: 0;
+}
+body p{
+    color:#355135;
 }
 h1 {
     color: #355135;
@@ -113,9 +112,20 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 200px 80px;
+    gap: 80px;
 }
-.pigeon_image{
+figcaption {
+    color: #355135;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2x;
+    font-weight: bold;
+    text-align: center;
+}
+.gallery_images p {
+    width: 300px;
+    text-align: justify;
+}
+.gallery_image{
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -123,19 +133,37 @@ h1 {
     border-style: solid;
     border-color: #355135;
     border-radius: 5px;
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
 }
-figcaption{
-    color: #355135;
-    font-weight: bold;
-    text-align: center;
+.adopt-button{
+    display: block;
+    background: linear-gradient(0deg, rgba(227,156,174,1) 0%, rgba(136,255,163,1) 100%);
+    border: none;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:#355135;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #355135;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.adopt-button a{
+    text-decoration: none;
+    color: #355135;
+}
+a{
+    text-decoration: none;
 }
 footer{
     background-color: #355135;
     position:relative;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 footer p{
     padding: 40px;

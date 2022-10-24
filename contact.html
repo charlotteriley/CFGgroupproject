@@ -7,38 +7,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="contact_style.css" rel="stylesheet">
     <title>Contact page</title>
+    <script src="app.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-cfg-green">
-        <a class="navbar-brand" href="#">
-            <img src="pigeon.png" width="50" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                 <a class="nav-link" href="#">Home</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Facts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link text-right" href="#">Contact <span class="sr-only">(current)</span></a>
-              </li>   
-            </div>
-        </nav>
+    <nav class="nav">
+        <img class="logo" src="images/PPLlogo.png" alt="pigeon protection logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Facts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+        <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+        </div>
+     </nav>
+
 <div class="container">
-    <h1></h1>
+    <h1>Contact us</h1>
 </div>
 
 <div class="container">
@@ -47,7 +38,7 @@
             <div>
             <figure class="figure">
             <img src="https://www.allaboutbirds.org/guide/assets/photo/308067801-480px.jpg" class="figure-img img-fluid" alt="a pigeon">
-            <figcaption class="figure-caption text-justify"><br>Here we can put info about the selected pigeon? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, commodi! Nam, necessitatibus! Ea consectetur dolor dolorum unde atque qui in quo, ipsam sequi temporibus, delectus architecto accusantium? Corporis, consectetur neque.</figcaption>
+            <figcaption class="figure-caption text-justify"><br>At the Pigeon Protection League, we have a range of pigeons in desperate need of a new home. We are looking for loving homes for our birds. If you think you can offer a safe space for a pigeon, then please fill in the contact details. We aim to match you with a suitable pigeon for rehoming and support the entire process.</figcaption>
             </figure>
         </div>
      
@@ -72,10 +63,12 @@
             <label for="Pigeon">Choose a pigeon:</label>
             <br>
             <select id="pigeon" name="pigeon">
-            <option value="pig1">Pigeon 1</option>
-            <option value="pig1">Pigeon 2</option>
-            <option value="pig1">Pigeon 3</option>
-            <option value="pig1">Pigeon 4</option>
+            <option value="jacob">Jacob</option>
+            <option value="peanut">Peanut</option>
+            <option value="molly">Molly</option>
+            <option value="penny">Penny</option>
+            <option value="maxwell">Maxwell</option>
+            <option value="daisy">Daisy</option>
         </div>
 </select>
 
@@ -93,12 +86,9 @@
     <h1></h1>
 </div>
 
-<nav class="navbar fixed-bottom navbar-dark bg-cfg-green">
-    <a class="navbar-brand" href="#"> Pigeon Protecion League &copy;</a>
-</nav>
-
 
 </body>
+
 <!-- below are bootstraps java script links-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

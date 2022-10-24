@@ -49,7 +49,6 @@ select { /* This is to format the drop down box */
     padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    font-size: ;
   }
 figcaption { /* This is set to the pixel width of fig (manually) */
     max-width: 490px;
@@ -176,7 +175,3 @@ body {
       margin: 20px 0;
   }
 }
-.footer{
-  width:100% !important;
-  background-color: #355135;
-  align-items: center;}

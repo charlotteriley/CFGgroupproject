@@ -3,9 +3,7 @@
     
 <head>
     <meta name="viewport" content="width=device-width">
-    <!-- below are bootstraps css link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="contact_style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <title>Contact page</title>
     <script src="app.js"></script>
 
@@ -13,12 +11,12 @@
 
 <body>
     <nav class="nav">
-        <img class="logo" src="images/PPLlogo.png" alt="pigeon protection logo">
+        <img class="nav-logo" src="images/PPLlogo.png" alt="pigeon protection logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Facts</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul> 
         <div class="hamburger-menu">
@@ -27,71 +25,40 @@
             <div class="ham-bar bar-bottom"></div>
         </div>
      </nav>
-
-<div class="container">
+<main>
     <h1>Contact us</h1>
-</div>
-
 <div class="container">
-    <div class="row">
-        <div class="col-md">
-            <div>
-            <figure class="figure">
-            <img src="https://www.allaboutbirds.org/guide/assets/photo/308067801-480px.jpg" class="figure-img img-fluid" alt="a pigeon">
-            <figcaption class="figure-caption text-justify"><br>At the Pigeon Protection League, we have a range of pigeons in desperate need of a new home. We are looking for loving homes for our birds. If you think you can offer a safe space for a pigeon, then please fill in the contact details. We aim to match you with a suitable pigeon for rehoming and support the entire process.</figcaption>
-            </figure>
+    <div class="contact grid">
+        <div class="grid-item">
+            <img class="contact-image" src="https://www.allaboutbirds.org/guide/assets/photo/308067801-480px.jpg" alt="a pigeon">
+            <p>At the Pigeon Protection League, we have a range of pigeons in desperate need of a new home. We are looking for loving homes for our birds. If you think you can offer a safe space for a pigeon, then please fill in the contact details. We aim to match you with a suitable pigeon for rehoming and support the entire process.</p>
         </div>
-     
+        <div class ="grid-item">
+            <form action="" method="get">
+                
+                    <label for="name">Enter your name</label>
+                    <input type="text" id="name" name="name" required placeholder="John doe">
+                    <label for="email">Enter your email</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@gmail.com">
+                    <label for="mobile">Enter your mobile number</label>
+                    <input type="number" id="mobil" name="mobile" required placeholder="07733333133">
+                    <label for="Pigeon">Choose a pigeon:</label>
+                    <select id="pigeon" name="pigeon">
+                        <option value="jacob">Jacob</option>
+                        <option value="peanut">Peanut</option>
+                        <option value="molly">Molly</option>
+                        <option value="penny">Penny</option>
+                        <option value="maxwell">Maxwell</option>
+                        <option value="daisy">Daisy</option>
+                    </select>
+            </form>
+            <a class="adopt-button" href="#">Adopt a Pigeon Today!</a>
         </div>
-    <div class="row">
-        <div class ="col-md">
-        <form action="" method="get">
-            <div>
-            <label for="name">Enter your name</label> <br>
-            <input type="text" id="name" name="name" required placeholder="John doe">
-            </div>
-            <div>
-                <label for="email">Enter your email</label> <br>
-                <input type="email" id="email" name="email" required placeholder="john.doe@gmail.com">
-            </div>
-            <div>
-                <label for="mobile">Enter your mobile number</label> <br>
-                <input type="number" id="mobil" name="mobile" required placeholder="07733333133">
-                </div>
-            <div>
-                <br>
-            <label for="Pigeon">Choose a pigeon:</label>
-            <br>
-            <select id="pigeon" name="pigeon">
-            <option value="jacob">Jacob</option>
-            <option value="peanut">Peanut</option>
-            <option value="molly">Molly</option>
-            <option value="penny">Penny</option>
-            <option value="maxwell">Maxwell</option>
-            <option value="daisy">Daisy</option>
-        </div>
-</select>
-
-        </form>
-        <br>
-        <div>
-            <br>
-        <button class="adopt" type="submit" form="form" value="Submit">Adopt a pigeon today</button>
-        </div>
-
-    </div>
     </div>
 </div>
-<div class="container">
-    <h1></h1>
-</div>
-
-
+</main>
+<footer>
+    <p>Copyright Pigeon Protection League 2022 &copy;</p>
+</footer>
 </body>
-
-<!-- below are bootstraps java script links-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </html>

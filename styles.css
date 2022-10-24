@@ -282,8 +282,12 @@ select { /* This is to format the drop down box */
     padding: 6px 10px;
     margin: 8px 0;
 }
+
 .contact-image {
     border: solid 4px #355135;
     border-radius: 5px;
 }
 
+.text {
+    list-style-type: none;
+}

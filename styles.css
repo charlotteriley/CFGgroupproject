@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
 }
-.nav .logo {
+.nav .nav-logo {
     width: 200px;
 }
 .nav ul{
@@ -151,6 +151,7 @@ figcaption {
     padding: 10px;
     cursor: pointer;
     margin: 20px 0;
+    text-align: center;
 }
 .adopt-button a{
     text-decoration: none;
@@ -170,4 +171,28 @@ footer p{
     text-align: center;
     align-items: flex-end;
     color: #EFFDF1;
+}
+.about-us{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    gap: 20px 20px;
+}
+.about-us p{
+    width: 500px;
+    padding-bottom: 20px;
+}
+.home-image{
+    border-radius: 5px;
+    object-fit: cover;
+    border: solid 4px #355135;
+    width: 50%;
+    height: 600px;
+}
+.logo{
+    width: 500px;
+    border-radius: 4px;
+    padding-bottom: 20px;
 }

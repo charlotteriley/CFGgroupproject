@@ -66,25 +66,10 @@ h1 {
   text-align: center;
   padding: 60px;
 }
-body {
-  height: 100%;
-}
-
-#page-content {
-  flex: 1 0 auto;
-}
-
-
-
 
 /* nav bar charlotte
 */
 
-.navbar fixed-bottom{ 
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-}
 
 .nav{
   background-color: #355135;

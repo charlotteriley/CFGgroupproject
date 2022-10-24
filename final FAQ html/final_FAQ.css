@@ -1,0 +1,13 @@
+.FAQ {
+    background-color: #EFFDF1;
+    color: #355135;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2x;
+    margin: auto;
+    text-align: center;
+    padding: auto;
+}
+
+.text {
+    list-style-type: none;
+}

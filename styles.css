@@ -1,21 +1,64 @@
-.nav{
+/* 1. Base */
+body {
+    background-color: #EFFDF1;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2x;
+    margin: auto;
+    padding: auto;
+}
+
+body p {
+    color:#355135;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: #355135;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+figcaption {
+    color: #355135;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2x;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 2. Header */
+.nav {
     background-color: #355135;
     display: flex;
     align-items: center;
     position: relative;
 }
+
 .nav .nav-logo {
     width: 200px;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
     list-style: none;
 }
+
 .nav ul li:last-child {
     margin-left: auto;
 }
+
 .nav a {
     display: block;
     color: white;
@@ -23,10 +66,12 @@
     font-size: 18px;
     margin-right: 40px;
 }
+
 .nav a:hover{
     transform:scale(1.1);
     text-decoration: underline;
 }
+
 .hamburger-menu {
     margin-left: auto;
     margin-right: 10px;
@@ -37,8 +82,8 @@
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
-    
 }
+
 .ham-bar {
     width: 70%;
     height: 4px;
@@ -50,19 +95,24 @@
     transform: translate(-50%, -50%);
     transition: transform .6s, opacity .8s, top .6s;
 }
+
 .bar-top {
     top: 25%;
 }
+
 .bar-bottom {
     top: 75%;
 }
+
 .nav.active .hamburger-menu .bar-top {
     transform: translate(-50%, -50%) rotate(315deg);
     top: 50%;
 }
+
 .nav.active .hamburger-menu .bar-mid {
     opacity: 0;
 }
+
 .nav.active .hamburger-menu .bar-bottom {
     transform: translate(-50%, -50%) rotate(225deg);
     top: 50%;
@@ -92,40 +142,33 @@
         margin: 20px 0;
     }
 }
-body{
-    background-color: #EFFDF1;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2x;
-    margin: 0;
-    padding: 0;
-}
-body p{
-    color:#355135;
-}
-h1 {
-    color: #355135;
-    font-size: 50px;
-    text-align: center;
-    padding: 60px;
-}
-.gallery_images{
+
+/* 3. Components */
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 80px;
+    justify-content: space-between;
 }
-figcaption {
-    color: #355135;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2x;
-    font-weight: bold;
-    text-align: center;
-}
-.gallery_images p {
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
+}
+
+@media (max-width: 900px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+.gallery-item p {
     text-align: justify;
 }
-.gallery_image{
+
+.gallery-item img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -135,7 +178,8 @@ figcaption {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.adopt-button{
+
+.adopt-button {
     display: block;
     background: linear-gradient(0deg, rgba(227,156,174,1) 0%, rgba(136,255,163,1) 100%);
     border: none;
@@ -153,46 +197,71 @@ figcaption {
     margin: 20px 0;
     text-align: center;
 }
-.adopt-button a{
+
+.adopt-button a {
     text-decoration: none;
     color: #355135;
 }
-a{
+
+a {
     text-decoration: none;
 }
-footer{
+
+footer {
     background-color: #355135;
     position:relative;
     height: 100px;
     margin-top: 30px;
 }
-footer p{
+
+footer p {
     padding: 40px;
     text-align: center;
     align-items: flex-end;
     color: #EFFDF1;
 }
-.about-us{
+
+.grid {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: justify;
+    margin-bottom: 40px;
     gap: 20px 20px;
+    padding: 0 20px;
 }
-.about-us p{
-    width: 500px;
+
+@media (max-width: 900px) {
+    .grid {
+        flex-wrap: wrap;
+    }
+}
+
+.grid-item {
+    width: 50%;
+}
+
+@media (max-width: 900px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
+/* 4. Page */
+
+.about-us {
+    text-align: justify;
+}
+
+.about-us p {
     padding-bottom: 20px;
 }
-.home-image{
+
+.home-image {
     border-radius: 5px;
     object-fit: cover;
     border: solid 4px #355135;
-    width: 50%;
-    height: 600px;
 }
-.logo{
-    width: 500px;
+
+.logo {
     border-radius: 4px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
